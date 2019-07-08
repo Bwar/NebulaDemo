@@ -11,7 +11,6 @@
 #define MODULEHELLO_HPP_
 
 #include <string>
-#include <util/json/CJsonObject.hpp>
 #include <actor/cmd/Module.hpp>
 
 namespace demo
@@ -28,10 +27,6 @@ public:
     virtual bool AnyMessage(
                     std::shared_ptr<neb::SocketChannel> pUpstreamChannel,
                     const HttpMsg& oHttpMsg);
-protected:
-    void Response(std::shared_ptr<neb::SocketChannel> pUpstreamChannel,
-                    const HttpMsg& oInHttpMsg,
-                    int iErrno, const std::string& strErrMsg);
 };
 
 } /* namespace demo */

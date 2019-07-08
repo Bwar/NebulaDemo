@@ -7,8 +7,8 @@
  * @note
  * Modify history:
  ******************************************************************************/
-#include <fstream>
 #include "ModuleHello.hpp"
+#include <util/json/CJsonObject.hpp>
 
 namespace demo
 {
